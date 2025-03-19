@@ -19,22 +19,32 @@ let cylinderVolume height = circleArea >> (*) height
 let cylinderVolumeCar height radius = height * circleArea radius  
 
 
+
+let rec sumOfDigits n =
+    if n = 0 then 0  
+    else (n % 10) + sumOfDigits (n / 10)
+
 [<EntryPoint>]
 let main argv =
-    printf "Введите радиус круга: "
-    let radius = Double.Parse(Console.ReadLine())
+    
+    let res = sumOfDigits 127
+    printfn "%i" res
+    //printf "Введите радиус круга: "
+    //let radius = Double.Parse(Console.ReadLine())
 
-    printf "Введите высоту цилиндра: "
-    let height = Double.Parse(Console.ReadLine())
+    //printf "Введите высоту цилиндра: "
+    //let height = Double.Parse(Console.ReadLine())
 
-    //let volume = cylinderVolume height radius  
+    ////let volume = cylinderVolume height radius  
+    ////printfn "Объем цилиндра: %f" volume
+
+    //let volumeCar = cylinderVolume height  
+    //let volume = volumeCar radius
     //printfn "Объем цилиндра: %f" volume
 
-    let volumeCar = cylinderVolume height  
-    let volume = volumeCar radius
-    printfn "Объем цилиндра: %f" volume
-
     0  
+
+
 
 
 
