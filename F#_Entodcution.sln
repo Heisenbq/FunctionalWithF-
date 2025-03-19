@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35806.99 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "F#_Entodcution", "F#_Entodcution\F#_Entodcution.fsproj", "{301FE725-37C2-4816-8D0C-9B007C3A7A0A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{301FE725-37C2-4816-8D0C-9B007C3A7A0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{301FE725-37C2-4816-8D0C-9B007C3A7A0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{301FE725-37C2-4816-8D0C-9B007C3A7A0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{301FE725-37C2-4816-8D0C-9B007C3A7A0A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7B79BF55-D8BE-493F-A1BE-11656E431B10}
+	EndGlobalSection
+EndGlobal
