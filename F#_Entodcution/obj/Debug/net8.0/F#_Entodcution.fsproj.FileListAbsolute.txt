@@ -27,3 +27,4 @@ C:\Users\user\source\repos\F#_Entodcution\F#_Entodcution\obj\Debug\net8.0\refint
 C:\Users\user\source\repos\F#_Entodcution\F#_Entodcution\obj\Debug\net8.0\F#_Entodcution.pdb
 C:\Users\user\source\repos\F#_Entodcution\F#_Entodcution\obj\Debug\net8.0\F#_Entodcution.genruntimeconfig.cache
 C:\Users\user\source\repos\F#_Entodcution\F#_Entodcution\obj\Debug\net8.0\ref\F#_Entodcution.dll
+C:\Users\user\source\repos\F#_Entodcution\F#_Entodcution\obj\Debug\net8.0\F#_Entodcution.sourcelink.json

@@ -1,4 +1,6 @@
 ﻿// For more information see https://aka.ms/fsharp-console-apps
+open System
+
 printfn "Hello from F#"
 
 
@@ -7,6 +9,26 @@ let solve (a,b,c) =
         ((-b + sqrt(D))/ (2.0 * a) , (-b - sqrt(D))/ (2.0 * a));;
 solve(1.0, 2.0, -3.0);;
 
+
+
+let circleArea radius = Math.PI * radius * radius
+
+
+let cylinderVolume height = circleArea >> (*) height  
+
+
+[<EntryPoint>]
+let main argv =
+    printf "Введите радиус круга: "
+    let radius = Double.Parse(Console.ReadLine())
+
+    printf "Введите высоту цилиндра: "
+    let height = Double.Parse(Console.ReadLine())
+
+    let volume = cylinderVolume height radius  
+    printfn "Объем цилиндра: %f" volume
+
+    0  
 
 
 
