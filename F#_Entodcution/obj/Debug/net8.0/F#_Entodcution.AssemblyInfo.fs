@@ -10,7 +10,7 @@ open System.Reflection
 [<assembly: System.Reflection.AssemblyCompanyAttribute("F#_Entodcution")>]
 [<assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")>]
 [<assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")>]
-[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b6f47c23eabf9c268b8761bd794dc9ce52747fb6")>]
+[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+044b119aaebc26ceac79aeb42ced470da835de4d")>]
 [<assembly: System.Reflection.AssemblyProductAttribute("F#_Entodcution")>]
 [<assembly: System.Reflection.AssemblyTitleAttribute("F#_Entodcution")>]
 [<assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")>]

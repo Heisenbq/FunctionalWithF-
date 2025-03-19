@@ -24,10 +24,17 @@ let rec sumOfDigits n =
     if n = 0 then 0  
     else (n % 10) + sumOfDigits (n / 10)
 
+
+let rec sumOfDigitsTail n acc =
+    if n = 0 then acc
+    else sumOfDigitsTail (n/10) (acc + (n%10))
+
+
+
 [<EntryPoint>]
 let main argv =
     
-    let res = sumOfDigits 127
+    let res = sumOfDigitsTail 127 0
     printfn "%i" res
     //printf "Введите радиус круга: "
     //let radius = Double.Parse(Console.ReadLine())
