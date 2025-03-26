@@ -87,9 +87,24 @@ let langQuestion arg =
     | "F#" | "prolog" -> "ты Жидкий"
     | _ -> "молодец"
 
+
+let rec gcd a b =
+    if b = 0 then a else gcd b (a % b)
+
+
+let bothPrime n op initValue =
+    let rec loop i acc =
+        if i = 0 then acc  
+        else 
+            let newAcc = if gcd n i = 1 then op acc i else acc 
+            loop (i - 1) newAcc  
+
+    loop (n - 1) initValue 
+
 //[<EntryPoint>]
 //let main argv =
-    
+//    printf "Какой у тебя любимый язык программирования? "
+      //Console.ReadLine >> langQuestion >> printfn "%s"
 //    let res = fib 19
 //    printfn "%i" res
 //    //printf "Введите радиус круга: "
