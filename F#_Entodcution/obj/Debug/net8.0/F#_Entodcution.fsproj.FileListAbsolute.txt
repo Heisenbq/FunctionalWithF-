@@ -1,8 +1,4 @@
 C:\Users\user\source\repos\F#_Entodcution\F#_Entodcution\bin\Debug\net8.0\F#_Entodcution.exe
-C:\Users\user\source\repos\F#_Entodcution\F#_Entodcution\bin\Debug\net8.0\F#_Entodcution.deps.json
-C:\Users\user\source\repos\F#_Entodcution\F#_Entodcution\bin\Debug\net8.0\F#_Entodcution.runtimeconfig.json
-C:\Users\user\source\repos\F#_Entodcution\F#_Entodcution\bin\Debug\net8.0\F#_Entodcution.dll
-C:\Users\user\source\repos\F#_Entodcution\F#_Entodcution\bin\Debug\net8.0\F#_Entodcution.pdb
 C:\Users\user\source\repos\F#_Entodcution\F#_Entodcution\bin\Debug\net8.0\FSharp.Core.dll
 C:\Users\user\source\repos\F#_Entodcution\F#_Entodcution\bin\Debug\net8.0\cs\FSharp.Core.resources.dll
 C:\Users\user\source\repos\F#_Entodcution\F#_Entodcution\bin\Debug\net8.0\de\FSharp.Core.resources.dll
@@ -21,10 +17,8 @@ C:\Users\user\source\repos\F#_Entodcution\F#_Entodcution\obj\Debug\net8.0\F#_Ent
 C:\Users\user\source\repos\F#_Entodcution\F#_Entodcution\obj\Debug\net8.0\F#_Entodcution.AssemblyInfoInputs.cache
 C:\Users\user\source\repos\F#_Entodcution\F#_Entodcution\obj\Debug\net8.0\F#_Entodcution.AssemblyInfo.fs
 C:\Users\user\source\repos\F#_Entodcution\F#_Entodcution\obj\Debug\net8.0\F#_Entodcution.fsproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\F#_Entodcution\F#_Entodcution\obj\Debug\net8.0\F#_Entodcution.sourcelink.json
 C:\Users\user\source\repos\F#_Entodcution\F#_Entodcution\obj\Debug\net8.0\F#_Entod.5CA1A6CA.Up2Date
 C:\Users\user\source\repos\F#_Entodcution\F#_Entodcution\obj\Debug\net8.0\F#_Entodcution.dll
 C:\Users\user\source\repos\F#_Entodcution\F#_Entodcution\obj\Debug\net8.0\refint\F#_Entodcution.dll
 C:\Users\user\source\repos\F#_Entodcution\F#_Entodcution\obj\Debug\net8.0\F#_Entodcution.pdb
-C:\Users\user\source\repos\F#_Entodcution\F#_Entodcution\obj\Debug\net8.0\F#_Entodcution.genruntimeconfig.cache
-C:\Users\user\source\repos\F#_Entodcution\F#_Entodcution\obj\Debug\net8.0\ref\F#_Entodcution.dll
-C:\Users\user\source\repos\F#_Entodcution\F#_Entodcution\obj\Debug\net8.0\F#_Entodcution.sourcelink.json
