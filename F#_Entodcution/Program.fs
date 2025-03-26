@@ -66,13 +66,20 @@ let funcOfDigits n func initValue=
        | _ -> funcOfDigitsTail (n/10) (func acc (n%10))
     funcOfDigitsTail n initValue;;
 
+let funcOfDigitsWithCondition n func initValue boolFunc= 
+    let rec funcOfDigitsTail n acc =
+       match n with
+       | 0 -> acc
+       | _ -> if boolFunc (n%10) then funcOfDigitsTail (n/10) (func acc (n%10))
+              else funcOfDigitsTail (n/10) acc
+    funcOfDigitsTail n initValue;;
 
 funcOfDigits 223 (fun acc digit -> acc + digit) 0;;
 funcOfDigits 237 (fun acc digit -> acc * digit) 1;;
 funcOfDigits 723 (fun acc digit -> min acc digit) System.Int32.MaxValue;;
 funcOfDigits 723 (fun acc digit -> max acc digit) System.Int32.MinValue;;
 
-
+funcOfDigitsWithCondition 22345 (fun acc digit -> acc + digit) 0 (fun a -> a>3);;
        
 
 //[<EntryPoint>]
