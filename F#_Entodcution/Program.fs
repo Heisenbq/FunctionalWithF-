@@ -59,8 +59,6 @@ let fib n =
         fib ;; 
 
 
-let multiplyOp acc digit = acc * digit;;
-
 let funcOfDigits n func initValue= 
     let rec funcOfDigitsTail n acc =
        match n with
@@ -68,13 +66,13 @@ let funcOfDigits n func initValue=
        | _ -> funcOfDigitsTail (n/10) (func acc (n%10))
     funcOfDigitsTail n initValue;;
 
-funcOfDigits 237 multiplyOp 1;;
-    
 
- //let fib_Or_SumDigits n =
- //   match n with
- //       |true -> fib
- //       |false ->sumOfDig
+funcOfDigits 223 (fun acc digit -> acc + digit) 0;;
+funcOfDigits 237 (fun acc digit -> acc * digit) 1;;
+funcOfDigits 723 (fun acc digit -> min acc digit) System.Int32.MaxValue;;
+funcOfDigits 723 (fun acc digit -> max acc digit) System.Int32.MinValue;;
+
+
        
 
 //[<EntryPoint>]
