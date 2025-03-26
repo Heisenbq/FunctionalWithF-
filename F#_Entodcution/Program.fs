@@ -92,17 +92,32 @@ let rec gcd a b =
     if b = 0 then a else gcd b (a % b)
 
 
-let bothPrime n op initValue =
+let bothPrime n func initValue =
     let rec loop i acc =
         if i = 0 then acc  
         else 
-            let newAcc = if gcd n i = 1 then op acc i else acc 
+            let newAcc = if gcd n i = 1 then func acc i else acc 
             loop (i - 1) newAcc  
 
     loop (n - 1) initValue 
 
 let eulerFunc n = 
     bothPrime n (fun acc primeDiv -> acc + 1) 0
+
+
+let bothPrimeWithCondition n func initValue condition=
+    let rec loop i acc =
+        if i = 0 then acc  
+        else 
+            if condition i then 
+                let newAcc = if gcd n i = 1 then func acc i else acc 
+                loop (i - 1) newAcc  
+            else 
+                loop (i - 1) acc 
+    loop (n - 1) initValue 
+
+//bothPrime 12 (fun acc primeDiv -> max acc primeDiv) -123123;;
+//bothPrimeWithCondition 12 (fun acc primeDiv -> max acc primeDiv) -123123  (fun num -> num<10);;
 
 //[<EntryPoint>]
 //let main argv =
