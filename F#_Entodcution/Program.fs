@@ -101,6 +101,9 @@ let bothPrime n op initValue =
 
     loop (n - 1) initValue 
 
+let eulerFunc n = 
+    bothPrime n (fun acc primeDiv -> acc + 1) 0
+
 //[<EntryPoint>]
 //let main argv =
 //    printf "Какой у тебя любимый язык программирования? "
