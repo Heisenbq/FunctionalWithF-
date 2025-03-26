@@ -80,7 +80,12 @@ funcOfDigits 723 (fun acc digit -> min acc digit) System.Int32.MaxValue;;
 funcOfDigits 723 (fun acc digit -> max acc digit) System.Int32.MinValue;;
 
 funcOfDigitsWithCondition 22345 (fun acc digit -> acc + digit) 0 (fun a -> a>3);;
-       
+     
+     
+let langQuestion arg = 
+    match arg with
+    | "F#" | "prolog" -> "ты Жидкий"
+    | _ -> "молодец"
 
 //[<EntryPoint>]
 //let main argv =
