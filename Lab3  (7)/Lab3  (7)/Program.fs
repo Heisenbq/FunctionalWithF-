@@ -7,6 +7,7 @@ open IPrint
 open Maybe
 open TextParsec
 open Agent
+open VehicleRegistrationPassport
 
 
 let checkGeometricShape() =
@@ -69,6 +70,26 @@ let checkAgent() =
     agent.Post(MultiplyNumbers(5, 6)) 
     System.Threading.Thread.Sleep(1000)
 
+let checkPTS() = 
+    let doc1 = VehicleRegistrationPassport("1234", "567890", "Иванов И.И.", "Toyota Camry")
+    let doc2 = VehicleRegistrationPassport("1234", "567890", "Петров П.П.", "Honda Civic")
+    let doc3 = VehicleRegistrationPassport("4321", "987654", "Сидоров С.С.", "BMW X5")
+    
+    // Вывод документов на экран
+    doc1.PrintDocument()
+    printfn ""
+    doc2.PrintDocument()
+    printfn ""
+    doc3.PrintDocument()
+    printfn ""
+    
+    // Сравнение документов
+    printfn "Документы doc1 и doc2 одинаковы: %b" (doc1.Equals(doc2))  // true
+    printfn "Документы doc1 и doc3 одинаковы: %b" (doc1.Equals(doc3))  // false
+    
+
+   
+
 
 [<EntryPoint>]
 let main argv =
@@ -81,7 +102,8 @@ let main argv =
     //checkGeometricShapeAlgebraic()
     //checkLawsMaybe()
     //checkParsec()
-    checkAgent()
+    //checkAgent()
+    //checkPTS()
 
 
     0 
