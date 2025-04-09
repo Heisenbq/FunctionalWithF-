@@ -34,6 +34,13 @@ let sum_even list = reduce list (+) (fun a -> a%2 = 0) 0
 
 let count_odd list = reduce list (fun a b -> a+1) (fun a -> a%2 = 1) 0
 
+let rec frequency list num count =
+     match list with
+     | [] -> count
+     | head::tail -> 
+         let newCount = if head = num then count+1 else count
+         frequency tail num newCount
+
 [<EntryPoint>]
 let main argv =
 
@@ -49,8 +56,8 @@ let main argv =
 
     Console.WriteLine("Минимальный элемент списка: " + (minElOfList arr).ToString())
     Console.WriteLine("Сумма чётных: " + (sum_even arr).ToString())
-    Console.WriteLine("Количество нечётных:" + (count_odd arr).ToString())
-
+    Console.WriteLine("Количество нечётных: " + (count_odd arr).ToString())
+    Console.WriteLine("частота элемента 3: " + (frequency arr 3 0).ToString())
 
     0  
 
