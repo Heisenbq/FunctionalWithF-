@@ -1,9 +1,46 @@
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Dd]ist/
+[Dd]istPublic/
+[Dd]ebug/	
+[Dd]ebugPublic/
+[Dd]ist/
+[Dd]istPublic/
+
+# User-specific files
 .vs/
-*.suo
-*.user
-*.cache
-*.pdb
-*.obj
-*.exe
-*.dll
-*.log
+.idea/
+.vscode/
+
+# User-specific files (Windows)
+Thumbs.db
+ehthumbs.db
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# JetBrains Rider
+.idea/
+
+# NUGET
+*.nupkg
+# User-specific files
+.vs2019/
+.vs2017/
+.vs2015/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
