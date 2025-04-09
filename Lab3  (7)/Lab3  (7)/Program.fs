@@ -6,6 +6,7 @@ open GeometricShapeAlgebraic
 open IPrint
 open Maybe
 open TextParsec
+open Agent
 
 
 let checkGeometricShape() =
@@ -62,6 +63,12 @@ let checkParsec() =
 
     expressions |> List.iter parseExpression
 
+let checkAgent() = 
+    agent.Post(PrintMessage "Hello, agent!") 
+    agent.Post(AddNumbers(3, 4))  
+    agent.Post(MultiplyNumbers(5, 6)) 
+    System.Threading.Thread.Sleep(1000)
+
 
 [<EntryPoint>]
 let main argv =
@@ -73,7 +80,8 @@ let main argv =
     //checkGeometricShape()
     //checkGeometricShapeAlgebraic()
     //checkLawsMaybe()
-    checkParsec()
+    //checkParsec()
+    checkAgent()
 
 
     0 
