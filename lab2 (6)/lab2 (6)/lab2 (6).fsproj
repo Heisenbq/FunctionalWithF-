@@ -7,7 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="ListTreat.fs" />
+    <Compile Include="BinaryTree.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
 </Project>
+
+

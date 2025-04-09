@@ -1,5 +1,7 @@
 ﻿// For more information see https://aka.ms/fsharp-console-apps
 open System
+open BinaryTree
+open ListTreat
 
 let readList n = 
     let rec readListRec n acc =
@@ -58,6 +60,25 @@ let main argv =
     Console.WriteLine("Сумма чётных: " + (sum_even arr).ToString())
     Console.WriteLine("Количество нечётных: " + (count_odd arr).ToString())
     Console.WriteLine("частота элемента 3: " + (frequency arr 3 0).ToString())
+
+    let result = most_frequent [1; 2; 2; 3; 3; 3; 4; 4; 4; 4]
+    printfn "Most frequent element: %d" result
+
+    let result2 = count_square_elements [4; 16; 25; 5; 36; 10]
+    printfn "Count of square elements: %d" result2
+    
+    let result3 = digit_sum 12345
+    printfn "Digit sum of 12345: %d" result3
+    
+    let result4 = count_divisors 36
+    printfn "Count of divisors of 36: %d" result4
+    
+    let sortedA, sortedB, sortedC = create_tuples [3; 1; 4; 1; 5] [12; 23; 34; 45] [56; 67; 78; 89]
+    printfn "Sorted A: %A" sortedA
+    printfn "Sorted B: %A" sortedB
+    printfn "Sorted C: %A" sortedC
+    
+    
 
     0  
 
