@@ -4,6 +4,7 @@ open System
 open GeometricShape
 open GeometricShapeAlgebraic
 open IPrint
+open Maybe
 
 
 let checkGeometricShape() =
@@ -32,10 +33,30 @@ let checkGeometricShapeAlgebraic() =
     printfn "Area of Circle: %.2f" (getArea circle)
 
 
+let checkLawsMaybe() =
+    // Пример Maybe с числом
+    let m = Some 5
+    let n = None
+
+    // Проверка функтора
+    printfn "Identity law (Some 5): %b" (identityLaw m)
+    printfn "Composition law (Some 5): %b" (compositionLaw m (fun x -> x + 1) (fun x -> x * 2))
+    printfn "Identity law (None): %b" (identityLaw n)
+
+    // Проверка аппликативного функтора
+    printfn "Identity law' (Some 5): %b" (identityLaw' m)
+    //printfn "Composition law' (Some 5): %b" (compositionLaw' m (fun x -> x + 1) (fun x -> x * 2))
+
+    // Проверка монады
+    printfn "Identity Monad law (Some 5): %b" (identityMonadLaw m)
+    printfn "Associativity Monad law (Some 5): %b" (associativityLaw m (fun x -> Some (x + 1)) (fun x -> Some (x * 2)))
+    
+
 [<EntryPoint>]
 let main argv =
 
-    
+
+    //checkLawsMaybe()
 
 
     //checkGeometricShape()
