@@ -6,7 +6,6 @@ type Maybe<'a> =
 
 module Maybe =
 
-    // Функтор: map применяет функцию к значению внутри Maybe
     let map f m =
         match m with
         | Some x -> Some (f x)

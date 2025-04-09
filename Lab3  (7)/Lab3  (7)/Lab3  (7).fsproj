@@ -7,11 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="TextParsec.fs" />
     <Compile Include="Maybe.fs" />
     <Compile Include="GeometricShapeAlgebraic.fs" />
     <Compile Include="IPrint.fs" />
     <Compile Include="GeometricShape.fs" />
     <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FParsec" Version="1.1.1" />
   </ItemGroup>
 
 </Project>

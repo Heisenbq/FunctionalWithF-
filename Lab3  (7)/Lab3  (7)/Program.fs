@@ -5,6 +5,7 @@ open GeometricShape
 open GeometricShapeAlgebraic
 open IPrint
 open Maybe
+open TextParsec
 
 
 let checkGeometricShape() =
@@ -51,15 +52,28 @@ let checkLawsMaybe() =
     printfn "Identity Monad law (Some 5): %b" (identityMonadLaw m)
     printfn "Associativity Monad law (Some 5): %b" (associativityLaw m (fun x -> Some (x + 1)) (fun x -> Some (x * 2)))
     
+let checkParsec() = 
+    let expressions = [
+        "5"
+        "3 + 4"
+        "10 - 2"
+        "3 + 4 - 1"
+    ]
+
+    expressions |> List.iter parseExpression
+
 
 [<EntryPoint>]
 let main argv =
 
 
-    //checkLawsMaybe()
+    
 
 
     //checkGeometricShape()
     //checkGeometricShapeAlgebraic()
+    //checkLawsMaybe()
+    checkParsec()
+
 
     0 
